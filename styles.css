@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.post {
+    width: 25%;
+    height: auto;
+    background: whitesmoke;
+    border: 3px solid;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin: 60px;
+}
+
+.post-head{
+    width: 100%;
+    height: 20%;
+    background: whitesmoke;
+    padding: 10px;
+    display: flex;
+    border-radius: 13px 13px 0 0 ;
+    
+
+    
+}
+.post-head-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.post-head > div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    
+}
+
+.perfil-image {
+    width: 40px;
+    object-fit: cover;
+    clip-path: circle();
+    height: 40px;
+    
+    
+}
+.boton-opciones {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin: 5px;
+    border-radius: 10px;
+   
+}
+.boton-opciones:active {
+    transform: scale(0.95);       
+  background-color: #373c3f;}
+
+
+.post-image{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+}
+.post-image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.reacciones{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.reacciones >div{
+    display: flex;
+}
+
+
+
+body{ 
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+     background: linear-gradient(0deg,rgba(161, 103, 154, 1) 0%, rgba(116, 113, 189, 1) 100%);
+    z-index: -1;
+}
+.post-reaction-info {
+    padding-bottom: 10px;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+}
+.post-description{
+    padding: 5px;
+}
+.fijo-arriba {
+    position: sticky;
+    width: 100%;
+    height: 12%;
+    max-height: 100px;
+    background: whitesmoke;
+    z-index: 10000;
+    top: 0;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+
+}
+.fijo-arriba >img{
+    max-height: 100%;
+    height: 100px;
+    max-width: 100%;
+    
+
+    
+}
